@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/explvchild"
+    android:layout_width="fill_parent"
+    android:layout_height="85dip"
+    android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/lblListCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/lblListDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/lblListCategory"/>
+
+        <TextView
+            android:id="@+id/lblListExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="170dp"
+            android:layout_toRightOf="@+id/lblListDate"/>
+
+    <TextView
+            android:id="@+id/lblListid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+
+</RelativeLayout>

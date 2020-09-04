@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/md_grey_50"
+    tools:context=".HomeScreenActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/homescreen_tv_income"
+            style="@style/hoem_textfield_style"
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Income "/>
+
+
+
+        <TextView
+            android:id="@+id/homescreen_tv_income_amount"
+            style="@style/hoem_textfield_style"
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            android:gravity="center_vertical"
+            android:textColor="#00ff00"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:id="@+id/homescreen_tv_expense"
+            style="@style/hoem_textfield_style"
+            android:paddingLeft="5dp"
+            android:text="Expense " />
+
+        <!--<ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_rupee2"
+            />-->
+
+        <TextView
+            android:id="@+id/homescreen_tv_expense_amount"
+            style="@style/hoem_textfield_style"
+
+            android:textColor="@color/md_red_A700"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="3dp">
+        <TextView
+            android:id="@+id/homescreen_tv_saving"
+            style="@style/hoem_textfield_style"
+            android:paddingLeft="5dp"
+            android:text="Balance "/>
+
+        <!--<ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_rupee2"
+            />-->
+
+        <TextView
+            android:id="@+id/homescreen_tv_saving_amount"
+            style="@style/hoem_textfield_style"
+            android:text=""
+            android:textColor="@color/accent_material_light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="35px"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/home_btn_inner_linear">
+
+            <Button
+                android:id="@+id/homescreen_btn_addincome"
+                style="@style/home_button"
+                android:text="Add Income"
+
+                android:background="@drawable/home_screen_button"/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/home_btn_inner_linear">
+
+            <Button
+                android:id="@+id/homescreen_btn_addexpense"
+                style="@style/home_button"
+                android:text="Add Expense"
+                android:background="@drawable/home_screen_expense_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10px"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/homescreen_btn_history"
+            style="@style/home_button"
+            android:text="History"
+            android:background="@drawable/home_screen_hisstory_button"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
